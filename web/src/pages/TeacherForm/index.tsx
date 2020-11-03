@@ -58,11 +58,11 @@ function TeacherForm() {
       cost: Number(cost),
       schedule: scheduleItems
     }).then(() => {
-      alert('Cadastro realizado com sucesso!');
+      alert('Realizado com sucesso!');
 
       history.push('/');
     }).catch(() => {
-      alert('Erro no cadastro!');
+      alert('Erro!');
     })
   }
 
@@ -70,7 +70,7 @@ function TeacherForm() {
     <div id="page-teacher-form" className="container">
       <PageHeader 
         title="Que incrível que você quer dar aulas."
-        description="O primeiro passo é preencher esse formulário de inscrição"
+        description="Para começar preencher esse formulário de inscrição"
       />
 
       <main>
@@ -191,7 +191,7 @@ function TeacherForm() {
               Preencha todos os dados
             </p>
             <button type="submit">
-              Salvar cadastro
+              Salvar dados
             </button>
           </footer>
         </form>
